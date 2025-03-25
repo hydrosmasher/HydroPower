@@ -1,8 +1,6 @@
 # 🌊 **HydroPower** 🏊‍♂️🏋️‍♀️  
 **AI-Driven Performance & Training Assistant for Swimmers**  
 
-![HydroPower Banner](https://your-image-link.com) *(Replace with actual banner if available)*  
-
 ## 🚀 Overview  
 **HydroPower** is an AI-powered web and mobile app designed to **analyze, enhance, and optimize** swimming performance. It integrates **real-time data from wearables** (heart rate monitors, smart goggles) and **machine learning models** to offer:  
 ✅ Structured swim workouts inspired by Olympic training  
