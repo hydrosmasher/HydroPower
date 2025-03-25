@@ -1,24 +1,9 @@
-# FastAPI & ASGI Server
 fastapi
 uvicorn
-
-# Machine Learning & Data Processing
-tensorflow
-onnxruntime
 numpy
 pandas
-scikit-learn
-
-# Cloud & Realtime Data
+tensorflow  # Instead of tflite-runtime
+onnxruntime
+paho-mqtt
 firebase-admin
-paho-mqtt  # For MQTT-based wearable data streaming
-
-# API & Web Integration
 requests
-python-dotenv  # For managing environment variables
-
-# UI (Optional if using Streamlit)
-streamlit
-
-# Database (Optional if using Firebase/Supabase)
-supabase
