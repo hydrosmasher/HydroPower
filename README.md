@@ -1,115 +1,75 @@
-HydroPower
+# 🌊 **HydroPower** 🏊‍♂️🏋️‍♀️  
+**AI-Driven Performance & Training Assistant for Swimmers**  
 
-Overview
+![HydroPower Banner](https://your-image-link.com) *(Replace with actual banner if available)*  
 
-HydroPower is an AI-driven web and mobile application designed for competitive swimmers, coaches, and fitness enthusiasts. It provides structured workout plans, performance analysis, injury prevention tips, nutritional advice, and real-time insights using data from wearable devices.
+## 🚀 Overview  
+**HydroPower** is an AI-powered web and mobile app designed to **analyze, enhance, and optimize** swimming performance. It integrates **real-time data from wearables** (heart rate monitors, smart goggles) and **machine learning models** to offer:  
+✅ Structured swim workouts inspired by Olympic training  
+✅ Dryland strength & mobility training  
+✅ AI-driven workout & pace analysis  
+✅ Injury prevention & recovery advice  
+✅ Personalized nutrition plans  
+✅ Real-time performance feedback  
 
-Features
+---
 
-Swim Workout Generator: Structured plans inspired by Olympic training programs for different strokes and intensities.
+## 🎯 **Key Features**  
+🔹 **Swim Workout Generator** – Custom plans based on stroke, intensity & training goals.  
+🔹 **Dryland Training** – Strength, core & mobility workouts tailored for swimmers.  
+🔹 **Pace & Workout Analysis** – Evaluates lap times, heart rates & interval rest.  
+🔹 **Injury Prevention** – AI-based recovery tips & prevention techniques.  
+🔹 **Nutrition Guidance** – Structured diets (Veg, Vegan, Non-Veg) for optimal performance.  
+🔹 **Swimming Records & Knowledge** – National & international stats for swimmers, coaches & parents.  
 
-Dryland Workout Generator: Strength, core, and mobility training plans tailored for swimmers.
+---
 
-Pace and Workout Analysis: Evaluates lap times, heart rates, and interval rest times to offer performance feedback and improvement advice.
+## 🏗 **Tech Stack**  
+### **Backend & Cloud**  
+- **Python (FastAPI/Flask)** – For API development  
+- **AWS Lambda / Google Cloud Functions** – Low-cost, serverless architecture  
+- **Firebase / Supabase** – Real-time database  
+- **AWS IoT Core / MQTT** – Wearable data streaming  
+- **TensorFlow Lite / ONNX** – Lightweight ML model inference  
 
-Injury Advice: Recovery and prevention tips for common swimming injuries.
+### **Frontend & Mobile**  
+- **React.js (Web)** – Hosted on Vercel/GitHub Pages  
+- **React Native (Mobile)** – Cross-platform (iOS & Android)  
+- **Streamlit** (for interactive UI in some ML features)  
 
-Nutritional Advice: Structured diet plans for Veg, Vegan, and Non-Veg categories.
+### **Machine Learning**  
+- **Workout Analysis Model** – Predicts fatigue, efficiency & technique errors  
+- **Heart Rate & Pace Analysis** – AI-driven recommendations  
+- **Nutritional Recommendation Model** – Tailored meal planning  
 
-General Knowledge: Accurate information on aquatic national and international records, news, and performance insights.
+---
 
-Tech Stack
+## 📡 **System Architecture**  
 
-Frontend:
-
-Web: React.js (Vercel/GitHub Pages for hosting)
-
-Mobile: React Native
-
-Backend:
-
-FastAPI / Flask for API services
-
-AWS Lambda (Serverless)
-
-Firebase Firestore (NoSQL Database) or Supabase (PostgreSQL)
-
-WebSockets / MQTT for real-time data processing
-
-Machine Learning:
-
-TensorFlow Lite / ONNX for ML model deployment
-
-AWS SageMaker / Google Vertex AI for model hosting (free-tier options available)
-
-Cloud Services:
-
-AWS Lambda / Google Cloud Functions (serverless computing)
-
-DynamoDB / Firestore for scalable storage
-
-MQTT with AWS IoT Core for real-time data streaming from wearables
-
-Docker + Fly.io / Render for cost-effective container hosting
-
-Cloud Architecture
-
-User Interaction Layer: Mobile & web apps communicate with the backend via REST APIs & WebSockets.
-
-Backend Services: FastAPI/Flask-based APIs hosted on AWS Lambda or Firebase Functions.
-
-Data Storage: Firestore/Supabase/DynamoDB for storing user data, workouts, and performance metrics.
-
-ML Model Inference: Pre-trained models deployed on AWS SageMaker or Hugging Face Spaces.
-
-Wearable Integration: MQTT/WebSockets for real-time data collection from heart rate monitors & smart swim goggles.
-
-Setup & Deployment
-
-Local Setup
-
-Clone the repository:
-
-git clone https://github.com/yourusername/HydroPower.git
-cd HydroPower
-
-Install dependencies:
-
-pip install -r requirements.txt  # Backend
-npm install  # Frontend
-
-Run the backend:
-
-uvicorn main:app --reload
-
-Run the frontend:
-
-npm start
-
-Cloud Deployment
-
-Backend: Deploy FastAPI/Flask on AWS Lambda using Serverless Framework
-
-Frontend: Deploy React.js on Vercel / GitHub Pages
-
-ML Model: Deploy on Hugging Face Spaces / AWS SageMaker
-
-Contributing
-
-Fork the repository.
-
-Create a new branch:
-
-git checkout -b feature-branch
-
-Commit your changes and push:
-
-git commit -m "Added new feature"
-git push origin feature-branch
-
-Create a pull request.
-
-License
-
-This project is licensed under the MIT License.
-
+```plaintext
+                         +-----------------------------+
+                         |  HydroPower Web & Mobile App |
+                         +-----------------------------+
+                                       |
+                                       v
+                +-------------------------------------+
+                |         FastAPI / Flask API        |
+                |  (Handles workouts, nutrition, AI) |
+                +-------------------------------------+
+                           |       |
+                           v       v
+ +--------------------------------------------+
+ |  Real-time Data Processing (AWS Lambda)    |
+ |  ML Model Inference (TensorFlow Lite, ONNX)|
+ +--------------------------------------------+
+                           |
+                           v
+         +-----------------------------------+
+         |  Database (Firebase / Supabase)  |
+         +-----------------------------------+
+                           |
+                           v
+       +--------------------------------------+
+       |  IoT Data (AWS IoT Core / MQTT)     |
+       |  Wearable Data Processing Pipeline  |
+       +--------------------------------------+
